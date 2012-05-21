@@ -1,0 +1,51 @@
+/*
+Theme Name:     Twenty Eleven - JR Jr.
+Theme URI:      https://github.com/jrcom/twentyeleven-jandrjr
+Description:    JR Junior theme for WordPress.
+Author:         Scott Rossillo
+Author URI:     http://www.jr.com/
+Template:       twentyeleven
+Version:        0.0.1
+*/
+
+@import url("../twentyeleven/style.css");
+@import url("./yui3-3_5_1_grids-min.css");
+
+
+/* Sidebar Widgets */
+
+#secondary {
+	/*background-color: #e2e2e2;*/
+	margin-right: 1.4%;
+	width: 24.0%;
+}
+
+.widget-title {
+	color: #bf301a;
+	font-size: 16px;
+}
+
+.widget ul li {
+	list-style: none;
+}
+
+
+/* Footer */
+
+#supplementary {
+	background-color: #000000;
+	border-top: none;
+	color: #ffffff;
+}
+
+#site-generator {
+	display: none;
+}
+
+
+/* Custom Content */
+.storeInfo {
+	border-left: 1px solid #ffffff;
+	padding-left: 10px;
+	height: 100%;
+}
