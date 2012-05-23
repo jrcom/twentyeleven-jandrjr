@@ -19,12 +19,24 @@ Version:           0.0.4
 
 #access li:hover > a,
 #access a:focus {
-        background: #bf301a; /* Show a solid color for older browsers */
-        background: -moz-linear-gradient(#bf301a, #bf301a);
-        background: -o-linear-gradient(#bf301a, #bf301a);
-        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bf301a), to(#bf301a)); /* Older webkit syntax */
-        background: -webkit-linear-gradient(#bf301a, #bf301a);
-        color: #f9d84b;
+	background: #bf301a; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#bf301a, #bf301a);
+	background: -o-linear-gradient(#bf301a, #bf301a);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bf301a), to(#bf301a)); /* Older webkit syntax */
+	background: -webkit-linear-gradient(#bf301a, #bf301a);
+	color: #f9d84b;
+}
+
+#access ul ul a {
+	color: #f9d84b;
+	background: #000;
+	line-height: 1.0em;
+}
+
+#access li:hover > a,
+#access ul ul :hover > a,
+#access a:focus {
+	background-color: #bf301a;
 }
 
 /* Sidebar Widgets */
