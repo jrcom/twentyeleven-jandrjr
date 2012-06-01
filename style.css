@@ -6,30 +6,64 @@ Description:       JR Junior theme for WordPress.
 Author:            Scott Rossillo
 Author URI:        http://www.jr.com/
 Template:          twentyeleven
-Version:           0.1.1
+Version:           1.0.0
 */
 
 @import url("../twentyeleven/style.css");
 @import url("./yui3-3_5_1_grids-min.css");
 
+/* Web Fonts */
+@font-face {
+    font-family: 'GillSansUltraBold';
+    src: url('GillSansUltraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Enty Title */
+h1.entry-title {
+	font-family: "GillSansUltraBold";
+	font-size: 20px;
+	line-height: 24px;	
+}
+
+h1.entry-title a{
+	color: #bf301a;	
+}
+
+.singular .entry-title {
+	color: #bf301a;
+	font-size: 20px;
+	line-height: 24px;
+}
+ 
 /* Menu */
+#access {
+        background: #FBE96B; /* Show a solid color for older browsers */
+        background: -moz-linear-gradient(#FBE96B, #f1dc00);
+        background: -o-linear-gradient(#FBE96B, #f1dc00);
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FBE96B), to(#f1dc00));
+        background: -webkit-linear-gradient(#FBE96B, #f1dc00);
+}
+
 #access a {
-	color: #f9d84b;
+	color: #000000;
 }
 
 #access li:hover > a,
 #access a:focus {
-	background: #bf301a; /* Show a solid color for older browsers */
+	background: #bf301a;
 	background: -moz-linear-gradient(#bf301a, #bf301a);
 	background: -o-linear-gradient(#bf301a, #bf301a);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bf301a), to(#bf301a)); /* Older webkit syntax */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bf301a), to(#bf301a));
 	background: -webkit-linear-gradient(#bf301a, #bf301a);
+	
 	color: #f9d84b;
 }
 
 #access ul ul a {
-	color: #f9d84b;
-	background: #000;
+	color: #000000;
+	background: #FBE96B;
 	line-height: 1.0em;
 }
 
