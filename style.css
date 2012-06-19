@@ -6,7 +6,7 @@ Description:       JR Junior theme for WordPress.
 Author:            Scott Rossillo
 Author URI:        http://www.jr.com/
 Template:          twentyeleven
-Version:           1.0.0
+Version:           1.1.0
 */
 
 @import url("../twentyeleven/style.css");
@@ -18,9 +18,41 @@ Version:           1.0.0
     src: url('GillSansUltraBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    /* foo */
 }
 
-/* Enty Title */
+/* Header */
+#branding #searchform,
+#only-search {
+	display: none;
+}
+
+/* Entries */
+.hentry, .no-results {
+	border-bottom: none;
+}
+
+.hentry:last-child {
+	border-bottom: none;
+}
+
+.hentry:after {
+	display: block;
+	content: '';
+	height: 50px;
+	width: 350px;
+	background-image: url('leaf-divider.gif');
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin: 30px auto 0px auto;
+}
+
+.hentry:last-child:after {
+	content: '';
+	background: none;
+	height: 0px;
+}
+
 h1.entry-title {
 	font-family: "GillSansUltraBold";
 	font-size: 20px;
@@ -39,15 +71,23 @@ h1.entry-title a{
  
 /* Menu */
 #access {
-        background: #FBE96B; /* Show a solid color for older browsers */
-        background: -moz-linear-gradient(#FBE96B, #f1dc00);
-        background: -o-linear-gradient(#FBE96B, #f1dc00);
-        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FBE96B), to(#f1dc00));
-        background: -webkit-linear-gradient(#FBE96B, #f1dc00);
+    background: #FBE96B; /* Show a solid color for older browsers */
+    margin: 0 0 0 0;
+}
+
+#branding .only-search + #access div {
+	padding-right: 0px !important; /* make the menu full width */
 }
 
 #access a {
 	color: #000000;
+	line-height: 3.0em;
+	padding: 0 2.0em;
+}
+
+#access ul {
+	font-size: 17px;
+	margin: 0 0 0 -4.40em;
 }
 
 #access li:hover > a,
@@ -59,6 +99,10 @@ h1.entry-title a{
 	background: -webkit-linear-gradient(#bf301a, #bf301a);
 	
 	color: #f9d84b;
+}
+
+#access ul ul {
+	top: 3.0em; /* should match #access a line-height */
 }
 
 #access ul ul a {
@@ -109,4 +153,40 @@ h1.entry-title a{
 	border-left: 1px solid #ffffff;
 	padding-left: 10px;
 	height: 100%;
+}
+
+/* Responsive design elements */
+@media (max-width: 800px) {
+}
+
+@media (max-width: 650px) {
+}
+
+@media (max-width: 450px) {
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+	.hentry, .no-results {
+		border-bottom: 1px solid #dddddd;
+	}
+	
+	.hentry:last-child {
+		border-bottom: none;
+	}
+
+	.hentry:after {
+		content: '';
+		background: none;
+		height: 0px;
+	}
+
+	#access ul {
+		font-size: 13px;
+	}
+	
+	#access a {
+		padding:  0px 1.5em 0px 0px;
+		float: none;
+	}
 }
