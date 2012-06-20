@@ -81,8 +81,9 @@ h1.entry-title a{
 
 #access a {
 	color: #000000;
+	font-weight: bold;
 	line-height: 3.0em;
-	padding: 0 2.0em;
+	padding: 0 1.8em;
 }
 
 #access ul {
@@ -90,14 +91,35 @@ h1.entry-title a{
 	margin: 0 0 0 -4.40em;
 }
 
-#access li:hover > a,
-#access a:focus {
+#access li.menu-item-color-1 {
+	background-color: #00aac6;
+}
+
+#access li.menu-item-color-2 {
+	background-color: #bf301a;
+}
+
+#access li:hover > a {
+	color: black;
+}
+
+#access li.menu-item-color-0:hover > a {
+	background: #FBE96B;
+}
+
+#access li.menu-item-color-1:hover > a {
+	background: #00aac6;
+}
+
+
+#access li.menu-item-color-2:hover > a {
 	background: #bf301a;
-	background: -moz-linear-gradient(#bf301a, #bf301a);
-	background: -o-linear-gradient(#bf301a, #bf301a);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bf301a), to(#bf301a));
-	background: -webkit-linear-gradient(#bf301a, #bf301a);
-	
+}
+
+/* sub-menu style */
+#access ul ul li:hover > a,
+#access ul ul a:focus {
+	background: #bf301a;
 	color: #f9d84b;
 }
 
