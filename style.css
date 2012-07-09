@@ -145,6 +145,8 @@ h1.entry-title a{
 	/*background-color: #e2e2e2;*/
 	margin-right: 1.4%;
 	width: 24.0%;
+	position:relative;
+	z-index:4;
 }
 
 .widget-title {
@@ -156,8 +158,27 @@ h1.entry-title a{
 	list-style: none;
 }
 
+/* Comments */
+#comments {
+	margin-bottom:100px;
+	position:relative;
+	z-index:5;
+}
 
 /* Footer */
+#colophon {
+	position:relative;
+}
+
+#colophon #cityscape {
+	position:absolute;
+	top:-200px;
+	left:0px;
+	width:1000px;
+	height:229px;
+	background-image: url('footer.png');
+	z-index:1;
+}
 
 #supplementary {
 	background-color: #000000;
