@@ -27,6 +27,14 @@ Version:           1.1.0
 	display: none;
 }
 
+#page {
+	margin:0 auto;
+}
+
+#branding {
+	border:none;
+}
+
 /* Entries */
 .hentry, .no-results {
 	border-bottom: none;
@@ -54,9 +62,10 @@ Version:           1.1.0
 }
 
 h1.entry-title {
+	color: #bf301a;
 	font-family: "GillSansUltraBold";
-	font-size: 20px;
-	line-height: 24px;	
+	font-size: 30px;
+	line-height: 33px;	
 }
 
 h1.entry-title a{
@@ -65,14 +74,18 @@ h1.entry-title a{
 
 .singular .entry-title {
 	color: #bf301a;
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 30px;
+	line-height: 33px;
 }
  
 /* Menu */
 #access {
     background: #FBE96B; /* Show a solid color for older browsers */
     margin: 0 0 0 0;
+    border-top: 3px solid #000;
+    -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
+	-moz-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
+	box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
 }
 
 #branding .only-search + #access div {
@@ -88,7 +101,7 @@ h1.entry-title a{
 
 #access ul {
 	font-size: 17px;
-	margin: 0 0 0 -4.40em;
+	margin: 0 0 0 -4.50em;
 }
 
 #access li.menu-item-color-1 {
@@ -119,18 +132,26 @@ h1.entry-title a{
 /* sub-menu style */
 #access ul ul li:hover > a,
 #access ul ul a:focus {
-	background: #bf301a;
-	color: #f9d84b;
+	background: #FBE96B;
+	color: #000000;
 }
 
 #access ul ul {
 	top: 3.0em; /* should match #access a line-height */
 }
 
+#access ul ul li {
+	border-left: 1px solid #bf301a;
+	border-right: 1px solid #bf301a;
+	border-bottom: 1px solid #bf301a;
+}
+	#menu-item-458 {border-top: 1px solid #bf301a;} /* first item in sub-sub-menu needs this */
+
 #access ul ul a {
 	color: #000000;
-	background: #FBE96B;
+	background: #ffffff;
 	line-height: 1.0em;
+	border-bottom: none;
 }
 
 #access li:hover > a,
