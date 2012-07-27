@@ -31,8 +31,17 @@ Version:           1.1.0
 	margin:0 auto;
 }
 
+#content {
+	margin-bottom: 50px;
+}
+
 #branding {
 	border:none;
+}
+
+#nav-below {
+	position: relative;
+	z-index: 999;
 }
 
 /* Entries */
@@ -145,7 +154,7 @@ h1.entry-title a{
 	border-right: 1px solid #bf301a;
 	border-bottom: 1px solid #bf301a;
 }
-	#menu-item-458 {border-top: 1px solid #bf301a;} /* first item in sub-sub-menu needs this */
+	#menu-item-152 {border-top: 1px solid #bf301a;} /* first item in sub-sub-menu needs this */
 
 #access ul ul a {
 	color: #000000;
@@ -181,9 +190,15 @@ h1.entry-title a{
 
 /* Comments */
 #comments {
-	margin-bottom:100px;
 	position:relative;
-	z-index:5;
+	z-index:999;
+	margin-bottom:100px;
+}
+
+#fbSEOComments {
+	position:relative;
+	z-index:999;
+	margin-bottom:50px;
 }
 
 /* Footer */
